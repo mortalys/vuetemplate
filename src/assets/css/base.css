@@ -1,0 +1,79 @@
+/*
+ * Globals
+ */
+:root {
+  --main-bg: #333;
+  --main-font-color: #F6F6F6;
+  --secundary-font-color: #D3D3D3;
+  --main-border-color: #595C5F;
+  --itemLink-color: #FFAF00;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: var(--main-bg);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--main-font-color);
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.containerRow {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  width: 50%;
+}
+
+/*
+ * Header
+ */
+header {
+  padding-top: 4vh;
+  height: 20%;
+  width: 100%;
+}
+
+header p {
+  color: var(--secundary-font-color);
+}
+
+/*
+ * Main
+ */
+main
+{
+  height: 60%;
+  width: 100%;
+}
+
+/*
+ * Footer
+ */
+footer {  
+  height: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  color: var(--secundary-font-color);
+  font-size: 1.5vh;
+}
