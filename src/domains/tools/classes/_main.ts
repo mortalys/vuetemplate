@@ -1,6 +1,6 @@
 // import domain classes
-import AppTools from './appTools'
-import AuxiliaryTools from './auxiliaryTools'
-import SystemTools from './systemTools'
+import App from './app.class'
+import Auxiliary from './auxiliary.class'
+import System from './system.class'
 
-export { AppTools, SystemTools, AuxiliaryTools }
+export { App, System, Auxiliary }

@@ -2,12 +2,12 @@
 import 'jest'
 
 // classes
-import { SystemTools } from './../../classes/_main'
+import { System } from '../../classes/_main'
 
 // System Tools
 describe('SystemTools', () => {
   // init object
-  const SystemToolsTests: SystemTools = new SystemTools()
+  const SystemToolsTests: System = new System()
 
   test('systemValid', () => {
     expect(SystemToolsTests.systemValid()).toBeTruthy()

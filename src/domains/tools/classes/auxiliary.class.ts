@@ -1,7 +1,7 @@
 // interface types
 import { ICustomEnums } from '../models/_main'
 
-export default class AuxiliaryTools {
+export default class Auxiliary {
   // method to find values by key in objects
   public customEnumsSeeker (seeker: string, objCollection: ICustomEnums): string {
     // init the object to return empty string

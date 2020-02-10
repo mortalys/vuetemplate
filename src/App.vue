@@ -9,20 +9,21 @@
     </main>
 
     <footer>
-      <p>TypeScript - Vue Starter Kit <br> 2020</p>
+      <Bottom />
     </footer>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-//import bottom from './views/bottom.vue'
+import Bottom from './views/Bottom.vue'
 import Users from './domains/users/components/_main.vue'
 
 @Component({
   name: 'App',
   components: {
     Users,
+    Bottom
   }
 })
 export default class App extends Vue {}

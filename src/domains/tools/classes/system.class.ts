@@ -2,9 +2,9 @@
 import { ISystemInfo, ICustomEnums } from '../models/_main'
 
 // external/shared
-import { AuxiliaryTools } from './_main'
+import { Auxiliary } from './_main'
 
-export default class SystemTools {
+export default class System {
   // set the available OS
   static OS_ENUM: ICustomEnums = {
     'Windows NT 10.0': 'Windows 10',
@@ -37,7 +37,7 @@ export default class SystemTools {
     browser: '0'
   };
 
-  public auxTools: AuxiliaryTools = new AuxiliaryTools();
+  public auxTools: Auxiliary = new Auxiliary();
 
   constructor () {
     this.systemDetection()
@@ -68,11 +68,11 @@ export default class SystemTools {
   private systemDetection (): ISystemInfo {
     this.currentSystemInfo = {
       // set OS
-      os: this.auxTools.customEnumsSeeker(window.navigator.userAgent, SystemTools.OS_ENUM),
+      os: this.auxTools.customEnumsSeeker(window.navigator.userAgent, System.OS_ENUM),
       // set Browser
       browser: this.auxTools.customEnumsSeeker(
         window.navigator.userAgent,
-        SystemTools.BROWSER_ENUM
+        System.BROWSER_ENUM
       ),
       // set Domain : Format  HTTP://domain/path - removing file
       domain: window.location.hostname + window.location.pathname.replace(/[^/]*$/, '')

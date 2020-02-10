@@ -1,12 +1,12 @@
 // import domain classes
-import { AppTools, AuxiliaryTools, SystemTools } from './classes/_main'
+import { App, Auxiliary, System } from './classes/_main'
 
 export default class Index {
-    static appTools: AppTools = new AppTools();
+    public app: App = new App();
 
-    static auxTools: AuxiliaryTools = new AuxiliaryTools();
+    public aux: Auxiliary = new Auxiliary();
 
-    static systemTools: SystemTools = new SystemTools();
+    static system: System = new System();
 }
 
-export { Index as Tools }
+export { Index as ToolsDomain }

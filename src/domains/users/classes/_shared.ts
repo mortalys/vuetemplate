@@ -1,4 +1,4 @@
 // Tools domain
-import { AppTools, SystemTools, AuxiliaryTools } from '../../tools/classes/_main'
+import { ToolsDomain } from '../../tools/index'
 
-export { AppTools, SystemTools, AuxiliaryTools }
+export { ToolsDomain }

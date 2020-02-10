@@ -1,16 +1,7 @@
 <template>
-  <div class="mastfoot mt-auto">
-    <div class="inner">
-      <p class="small">
-        <a
-          href="https://www.vizrtgroup.com/"
-          class="mr-3"
-        ><img
-          src="./../assets/media/images/vizrt-group-com.svg"
-        ></a>
-        Copyright © Vizrt AG. {{ copyrightYears }} All rights reserved.
-      </p>
-    </div>
+  <div>
+       TypeScript - Vue Starter Kit <br>
+       {{ copyrightYears }}
   </div>
 </template>
 
@@ -36,8 +27,9 @@ export default class Bottom extends Vue {
 </script>
 
 <style scoped>
-.mastfoot {
-  position: relative;
-  color: rgba(255, 255, 255, .5);
+
+div {
+  color: var(--secundary-font-color);
+  font-size: 1.5vh;
 }
 </style>

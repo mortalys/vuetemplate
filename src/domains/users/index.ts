@@ -1,13 +1,9 @@
 // import classes
 import { Users } from './classes/_main'
-import { AppTools, AuxiliaryTools, SystemTools } from './classes/_shared'
+import { ToolsDomain } from './classes/_shared'
 
 export default class Index {
-    // appTools: AppTools = new AppTools();
-
-    // auxTools: AuxiliaryTools = new AuxiliaryTools();
-
-    // systemTools: SystemTools = new SystemTools();
+    public domainTools: ToolsDomain = new ToolsDomain();
     
     users: Users = new Users();        
 }

@@ -1,6 +1,6 @@
 // import classes
 import { ServicesDev } from './_main'
-import { AppTools } from '../classes/_shared'
+import { ToolsDomain } from '../classes/_shared'
 
 // domain models
 import { IUser } from '../models/_main'
@@ -10,10 +10,10 @@ class Services {
     private _users: IRequests<IUser[]> = new ServicesDev();
 
     // Shared : Tools Domain
-    public appTools: AppTools = new AppTools();
+    public domainTools: ToolsDomain = new ToolsDomain();
 
     constructor () {
-      switch (this.appTools.mode) {
+      switch (this.domainTools.app.mode) {
         case envModes.DEV:
           this._users = new ServicesDev()
           break

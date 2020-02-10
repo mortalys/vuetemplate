@@ -2,7 +2,7 @@
 import 'jest'
 
 // classes
-import { AuxiliaryTools } from '../../classes/_main'
+import { Auxiliary } from '../../classes/_main'
 
 // models
 import { ICustomEnums } from '../../models/_main'
@@ -16,7 +16,7 @@ describe('AuxiliaryTools', () => {
   }
 
   // init object
-  const auxToolsTests: AuxiliaryTools = new AuxiliaryTools()
+  const auxToolsTests: Auxiliary = new Auxiliary()
 
   test('customEnumsSeeker-SUCCESS', () => {
     // what should be index key?
