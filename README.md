@@ -178,5 +178,3 @@ When using VSC with recommended ESLint and Vetur plugins it's also recommended t
 
 This is an on-going project and anyone is free to contribute in order to add new features!
 
-- Cesar Pinto 
-- Marcin Mateusz Hanc
