@@ -6,7 +6,7 @@ export default class Index {
 
     public aux: Auxiliary = new Auxiliary();
 
-    static system: System = new System();
+    public system: System = new System();
 }
 
 export { Index as ToolsDomain }
