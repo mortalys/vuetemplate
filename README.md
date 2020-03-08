@@ -15,6 +15,7 @@ Core libraries used:
 - Vue 2.x and VUE-CLI 4.x
 - Vuex using Vuex Class and Vuex Module Decorators;
 - Typescript 3.5;
+- SASS Loader ( SCSS, LESS, SASS )
 - AXIOS for Network requests;
 - Jest;
 - Cypress.
@@ -47,6 +48,10 @@ Visual Studio Code
 In case of npm having problems with installation of dev dependencies try
 
 `npm install --only=dev`
+
+In case of **node-sass** errors:
+
+`sudo npm install --save-dev --unsafe-perm node-sass`
 
 ### Compiles and hot-reloads for development
 

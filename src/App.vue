@@ -15,9 +15,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import Bottom from './views/Bottom.vue'
-import Users from './domains/users/components/_main.vue'
+import { Component, Vue } from 'vue-property-decorator';
+import Bottom from './views/Bottom.vue';
+import Users from './domains/users/components/_main/index';
 
 @Component({
   name: 'App',
